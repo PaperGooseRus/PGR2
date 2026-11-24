@@ -54,7 +54,7 @@ echo.
 echo Команда сборки:
 echo gcc %GTK_CFLAGS% -o bin\main.exe main.c %GTK_LIBS% -mwindows
 echo.
-gcc %GTK_CFLAGS% -o bin\main.exe main.c %GTK_LIBS% -mwindows
+gcc %GTK_CFLAGS% -o bin\main.exe main.c gui\activate.c %GTK_LIBS% -mwindows
 
 echo.
 
