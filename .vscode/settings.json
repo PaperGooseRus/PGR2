@@ -2,8 +2,8 @@
     "files.exclude": {
         ".clang-tidy": true,
         ".gitignore": true,
-        ".vscode": true,
+        ".vscode": false,
         "bin": true,
-        "*.bat": true
+        "*.bat": false
     }
 }

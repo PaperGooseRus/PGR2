@@ -1,12 +1,9 @@
 @echo off
 setlocal
+cls
 
-echo ПРОВЕРКА СОСТОЯНИЯ РЕПОЗИТОРИЯ:
+chcp 65001 >nul
+git log --graph --oneline --all --decorate
 git status
 
-echo.
-echo.
-echo.
-
-echo ОТОБРАЖЕНИЕ ГРАФА РЕПОЗИТОРИЯ:
-git log --graph --oneline --all --decorate
+endlocal
