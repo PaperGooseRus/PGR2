@@ -1,4 +1,4 @@
-#include "gui/activate.h"
+#include "activate.h"
 
 /**
  * \brief   АКТИВАЦИИ ЧЕРЕЗ КОЛБЭКИ И ЗАПУСК ПРИЛОЖЕНИЯ

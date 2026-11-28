@@ -1,0 +1,65 @@
+
+================================
+COMMAND: gcc --version 2>&1
+================================
+gcc (Rev7, Built by MSYS2 project) 16.2.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+EXIT CODE: 0
+
+================================
+COMMAND: g++ --version 2>&1
+================================
+g++ (Rev7, Built by MSYS2 project) 16.2.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+EXIT CODE: 0
+
+================================
+COMMAND: where gcc 2>&1
+================================
+C:\msys64\ucrt64\bin\gcc.exe
+
+EXIT CODE: 0
+
+================================
+COMMAND: where g++ 2>&1
+================================
+C:\msys64\ucrt64\bin\g++.exe
+
+EXIT CODE: 0
+
+================================
+COMMAND: echo %PATH% 2>&1
+================================
+C:\msys64\ucrt64\bin;C:\msys64\usr\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\gusev\.elan\bin;C:\Users\gusev\AppData\Local\Microsoft\WindowsApps;C:\Users\gusev\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\gusev\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim;C:\ProgramData\gusev\GitHubDesktop\bin;C:\Users\gusev\AppData\Local\GitHubDesktop\bin;c:\Users\gusev\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\gusev\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim 
+
+EXIT CODE: 0
+
+================================
+COMMAND: gcc --version 2>&1
+================================
+gcc (Rev7, Built by MSYS2 project) 16.2.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+EXIT CODE: 0
+
+================================
+COMMAND: g++ --version 2>&1
+================================
+g++ (Rev7, Built by MSYS2 project) 16.2.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+EXIT CODE: 0

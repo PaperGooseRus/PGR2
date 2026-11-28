@@ -12,28 +12,36 @@ static GtkWidget *create_notebook(void) {
     // ПЕРВАЯ ВКЛАДКА
     create_page(notebook_, "ИНФОРМАЦИЯ О СИСТЕМЕ", create_filling_tab1());
 
-    // ВТОРАЯ ВКЛАДКА
-    // СОЗДАНИЕ СОДЕРЖИМОГО ВТОРОЙ ВКЛАДКИ
-    GtkWidget *filling_tab2_ = gtk_label_new("СОДЕРЖИМОЕ ВТОРОЙ ВКЛАДКИ");
-    create_page(notebook_, "ИНФОРМАЦИЯ О СИСТЕМЕ", filling_tab2_);
-
-    // ...
-    // СОЗДАНИЕ СОДЕРЖИМОГО ... ВКЛАДКИ
-
     return notebook_;
 }
 
+/**
+ * \brief   ОСНОВНАЯ ФУНКЦИЯ СОЗДАНИЯ СОДЕРЖИМОГО ОКНА
+ */
 void activate(GtkApplication *_application, gpointer user_data) {
+    if (_application == NULL) {
+        return;
+    }
+
     (void)user_data;
 
     // СОЗДАНИЯ ГЛАВНОГО ОКНА ПРИЛОЖЕНИЯ
     GtkWidget *window_ = gtk_application_window_new(_application);
+    if (window_ == NULL) {
+        return;
+    }
+
     // ПЕРВОНАЧАЛЬНАЯ НАСТРОЙКА ОКНА
     gtk_window_set_title(GTK_WINDOW(window_), "PaperGooseRus");
     gtk_window_set_default_size(GTK_WINDOW(window_), 1920, 1080);
 
-    // ДОБАВЛЕНИЕ ВКЛАДОК
-    gtk_window_set_child(GTK_WINDOW(window_), create_notebook());
+    // СОЗДАНИЕ ГЛАВНОГО NOTEBOOK ПРИЛОЖЕНИЯ
+    GtkWidget *notebook_ = create_notebook();
+    if (notebook_ == NULL) {
+        return;
+    }
+
+    gtk_window_set_child(GTK_WINDOW(window_), notebook_);
 
     // ОТОБРАЖЕНИЕ ОКНА
     gtk_window_present(GTK_WINDOW(window_));

@@ -40,7 +40,7 @@ REM ==========================================
 REM 3. PROJECT INCLUDE DIRECTORIES
 REM ==========================================
 
-set "PROJECT_CFLAGS=-I. -Igui -Igui/table -Igui/tabe"
+set "PROJECT_CFLAGS=-I. -Igui -Igui/table -Igui/tabe -Icore -Icore/system"
 
 REM ==========================================
 REM 4. COMPILER OPTIONS
@@ -61,7 +61,7 @@ echo ==========================================
 
 gcc %CFLAGS% %GTK_CFLAGS% %PROJECT_CFLAGS% ^
     -o bin\main.exe ^
-    main.c gui\activate.c gui\table\table.c gui\tabe\tabe1.c ^
+    main.c gui\activate.c gui\table\table.c gui\tabe\tabe1.c core\system\system.c ^
     %GTK_LIBS% ^
     -mwindows
 
